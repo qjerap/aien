@@ -1,0 +1,37 @@
+
+.nav {
+    background-color: white;
+    display: flex;
+    width: 100%; 
+    position: sticky;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    &__logo {
+        margin-left: 0.5rem;
+        grid-column: 1 / 2;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #1A2225;
+        
+    }
+
+
+    &__links {
+        // display: flex;
+
+    }
+    &__link {
+        // font-weight: 700;
+        font-size: 0.9rem;
+        opacity: 1;
+    }
+
+    &__link:hover {
+        text-transform: uppercase;
+        opacity: 1;
+    }
+        
+    
+}

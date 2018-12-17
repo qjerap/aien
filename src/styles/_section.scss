@@ -6,6 +6,15 @@ section {
 
 section:nth-child(odd) {
 
-    background-color: white;;
+    background-color: white;    
+    border-left: none;
+    border-left: 1px solid lighten($color: grey, $amount: 30);
 
+
+}
+
+.section--carousel {
+    height: max-content;
+    background-color: #192124 !important;
+    border-right: 1px solid lighten($color: grey, $amount: 30);
 }
