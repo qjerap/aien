@@ -1,0 +1,57 @@
+.frontpage {
+    display: grid;
+    grid-template-columns: repeat(13, 100px);  
+    grid-template-rows: repeat(14, 100px);
+    margin-top: 1rem;
+    border-right: 1px solid lighten($color: grey, $amount: 30);
+    
+}
+
+.nav {
+    grid-area: 1 / 2 / 2 / 12;
+    align-self: end;
+    margin: 0 0 0.8rem 0;
+
+    &__logo {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #1A2225;
+        align-self: end;
+        writing-mode: vertical-lr; 
+        
+
+        
+    }
+    
+}
+.hero__main {
+    grid-area: 2 / 2 / 8 / 12;
+    background-image: url(images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+
+    object-fit: cover;
+
+}
+
+.hero__side {
+    z-index: 50;
+    grid-area: 3 / 9 / 11 / 14;
+    background-image: url(images/hero2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    filter: grayscale(40%);
+    box-shadow: 2px 3px 19px -6px rgba(0,0,0,0.55);
+
+}
+
+
+
+.aboutUs {
+    grid-area: 9 / 2 / 14 / 8; 
+    background-color: lightcoral;
+    margin: 0;
+}

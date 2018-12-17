@@ -1,0 +1,21 @@
+@import './styles/wrapper';
+@import './styles/var';
+@import './styles/frontpage';
+@import './styles/section';
+
+* {
+    box-sizing: border-box;
+    margin:  0;
+    font-family: 'Major Mono Display', monospace;
+
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}

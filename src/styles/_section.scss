@@ -1,0 +1,11 @@
+section {
+    height: 600px;
+    background-color: #F3F4F6;
+    border-left: 1px solid lighten($color: grey, $amount: 30);
+}
+
+section:nth-child(odd) {
+
+    background-color: white;;
+
+}
