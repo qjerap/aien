@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\hero.jpg":[["hero.0f0b5fd4.jpg","images/hero.jpg"],"images/hero.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./images\\hero.jpg":[["hero.0f0b5fd4.jpg","images/hero.jpg"],"images/hero.jpg"],"./images\\stripes-light.png":[["stripes-light.9f90c649.png","images/stripes-light.png"],"images/stripes-light.png"],"./images\\slide1.jpg":[["slide1.473fa526.jpg","images/slide1.jpg"],"images/slide1.jpg"],"./images\\hero2.jpg":[["hero2.82f6533b.jpg","images/hero2.jpg"],"images/hero2.jpg"],"./images\\slide2.jpg":[["slide2.ba171361.jpg","images/slide2.jpg"],"images/slide2.jpg"],"./images\\slide3.jpg":[["slide3.5351d789.jpg","images/slide3.jpg"],"images/slide3.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
