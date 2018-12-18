@@ -3,7 +3,9 @@
 @import './styles/header';
 @import './styles/section';
 @import './styles/nav';
-@import './styles/carousel';
+@import './styles/footer';
+@import './styles/sections/music';
+
 
 * {
     box-sizing: border-box;
@@ -17,7 +19,5 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: #1A2225;
-    
+    text-decoration: none;  
 }

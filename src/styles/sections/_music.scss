@@ -1,0 +1,20 @@
+.section-music {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    align-content: center;
+    
+
+    &__player {
+        
+    }
+
+    &__content {
+
+        p{
+        font-weight: 700 !important;
+        font-size: 70rem;            
+        }
+
+    }
+}
+

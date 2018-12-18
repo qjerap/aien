@@ -2836,6 +2836,11 @@ mdn-data@~1.1.0:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
   integrity sha512-FSYbp3lyKjyj3E7fMl6rYvUdX0FBXaluGqlFoYESWQlyUTq8R+wp0rkFxoYFqZlHCvsUXGjyJmLQSnXToYhOSA==
 
+medium-zoom@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.2.tgz#a154f7814e2999811a1d9218ea8aadab5bda90e4"
+  integrity sha512-rSNfTb1XY1nsb6sUA2v30PlsVO20qknzGHevfCviPVOWhfG3C2fkhhybydepeS2Jw+EwcbBJY/xRI1ckZBjEXw==
+
 merge-source-map@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/merge-source-map/-/merge-source-map-1.0.4.tgz#a5de46538dae84d4114cc5ea02b4772a6346701f"
