@@ -1,36 +1,15 @@
-section {
-    height: 600px;
+.section {
+    height: 70vh;
     background-color: #F3F4F6;
     border-left: 1px solid lighten($color: grey, $amount: 30);
-
-
+    display: grid;
+    grid-template-columns: 1fr 1300px 1fr ;
 }
 
 section:nth-child(odd) {
 
     background-color: white;    
-    border-left: none;
-    border-left: 1px solid lighten($color: grey, $amount: 30);
-
-
-
 
 }
 
-.section--carousel {
-    height: max-content;
-    background-color: #192124 !important;
-    border-right: 1px solid lighten($color: grey, $amount: 30);
-}
 
-.section--gallery {
-    // max-width: 100%;
-    padding:  2rem;
-    margin: auto;
-    height: min-content;
-    // border-left: none !important;
-    // display: grid;
-    // align-content: center;
-    background: url(images/stripes-light.png);
-    background-attachment: fixed;
-}
