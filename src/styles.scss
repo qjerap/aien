@@ -5,17 +5,21 @@
 @import './styles/footer';
 @import './styles/button';
 @import './styles/sections/music';
+@import './styles/sections/videos';
+@import './styles/sections/shows';
 
 
 * {
     box-sizing: border-box;
     margin:  0;
     font-family: 'Major Mono Display', monospace;
+    scroll-behavior: smooth;
 
 }
 
 body {
     margin: 0;
+    
 }
 
 a {

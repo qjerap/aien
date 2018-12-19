@@ -1,26 +1,23 @@
-// import mediumZoom from 'medium-zoom'
-// mediumZoom(document.querySelector('#test'))
 
 
-let scrollpos = window.scrollY
+var waypoint = new Waypoint({
+  element: document.getElementById('section'),
+  handler: (direction) => {
+    let nav = document.querySelectorAll('.nav__item');
 
-const header = document.querySelector(".header")
-const header_height = header.offsetHeight
-const navItems = document.querySelector(".nav__item")
-const navItems_height = navItems.offsetHeight;
-// console.log(navItems);
+    nav.forEach((item)=>{
 
+      direction == 'down' && item.classList.add('black');
+      direction == 'up' && item.classList.remove('black');   
 
-
-const add_class_on_scroll = () => console.log('KEK');
-
-
-window.addEventListener('scroll', function() { 
-  scrollpos = window.scrollY;
-
-  if (navItems_height >= header_height) { add_class_on_scroll() }
-
-
-//   else { remove_class_on_scroll() }
-//   console.log(scrollpos)
+    })
+    
+    
+  }
 })
+
+
+
+
+
+

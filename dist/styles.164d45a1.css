@@ -22,7 +22,6 @@
 
 .section {
   margin: 0 auto;
-  height: 70vh;
   background-color: #F3F4F6;
 }
 .section h1 {
@@ -52,9 +51,16 @@ section:nth-child(odd) {
   color: white;
   padding: 5px;
   font-weight: 700;
+  transition: color 1s;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .nav__item:hover {
   text-transform: uppercase;
+}
+
+.black {
+  transition: color 1s;
+  color: black;
 }
 
 footer {
@@ -122,6 +128,8 @@ footer h1 {
 }
 
 .section-music {
+  margin: auto;
+  max-width: 1300px;
   height: 550px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -137,10 +145,28 @@ footer h1 {
   width: 350px;
 }
 
+#videos {
+  background: url(stripes-light.9f90c649.png);
+  background-attachment: fixed;
+}
+
+.section-videos {
+  max-width: 1300px;
+  height: 550px;
+  background-attachment: fixed;
+  display: grid;
+  margin: auto;
+}
+
+.section-shows {
+  height: 550px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   font-family: "Major Mono Display", monospace;
+  scroll-behavior: smooth;
 }
 
 body {

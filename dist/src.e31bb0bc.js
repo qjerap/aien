@@ -105,26 +105,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   // Override the current require with this new one
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-// import mediumZoom from 'medium-zoom'
-// mediumZoom(document.querySelector('#test'))
-var scrollpos = window.scrollY;
-var header = document.querySelector(".header");
-var header_height = header.offsetHeight;
-var navItems = document.querySelector(".nav__item");
-var navItems_height = navItems.offsetHeight; // console.log(navItems);
-
-var add_class_on_scroll = function add_class_on_scroll() {
-  return console.log('KEK');
-};
-
-window.addEventListener('scroll', function () {
-  scrollpos = window.scrollY;
-
-  if (navItems_height >= header_height) {
-    add_class_on_scroll();
-  } //   else { remove_class_on_scroll() }
-  //   console.log(scrollpos)
-
+var waypoint = new Waypoint({
+  element: document.getElementById('section'),
+  handler: function handler(direction) {
+    var nav = document.querySelectorAll('.nav__item');
+    nav.forEach(function (item) {
+      direction == 'down' && item.classList.add('black');
+      direction == 'up' && item.classList.remove('black');
+    });
+  }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -153,7 +142,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62566" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49961" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

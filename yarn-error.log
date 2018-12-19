@@ -1,8 +1,8 @@
 Arguments: 
-  E:\App\node\node.exe C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+  E:\App\node\node.exe C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add node_modules
 
 PATH: 
-  C:\Users\parej\bin;E:\App\Git\mingw64\bin;E:\App\Git\usr\local\bin;E:\App\Git\usr\bin;E:\App\Git\usr\bin;E:\App\Git\mingw64\bin;E:\App\Git\usr\bin;C:\Users\parej\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\App\Git\cmd;E:\App\Microsoft VS Code\bin;E:\App\node;C:\Users\parej\AppData\Local\Microsoft\WindowsApps;E:\App\Microsoft VS Code\bin;C:\Users\parej\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\parej\AppData\Local\GitHubDesktop\bin;C:\Users\parej\AppData\Roaming\npm;C:\Program Files\heroku\bin;E:\App\Git\usr\bin\vendor_perl;E:\App\Git\usr\bin\core_perl
+  E:\code\aien\node_modules\.bin;C:\Users\parej\AppData\Local\Yarn\Data\link\node_modules\.bin;E:\code\aien\node_modules\.bin;C:\Users\parej\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\parej\AppData\Local\Yarn\bin;E:\App\libexec\lib\node_modules\npm\bin\node-gyp-bin;E:\App\lib\node_modules\npm\bin\node-gyp-bin;E:\App\node\node_modules\npm\bin\node-gyp-bin;C:\Users\parej\bin;E:\App\Git\mingw64\bin;E:\App\Git\usr\local\bin;E:\App\Git\usr\bin;E:\App\Git\usr\bin;E:\App\Git\mingw64\bin;E:\App\Git\usr\bin;C:\Users\parej\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;E:\App\Git\cmd;E:\App\Microsoft VS Code\bin;E:\App\node;C:\Users\parej\AppData\Local\Microsoft\WindowsApps;E:\App\Microsoft VS Code\bin;C:\Users\parej\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\parej\AppData\Local\GitHubDesktop\bin;C:\Users\parej\AppData\Roaming\npm;C:\Program Files\heroku\bin;E:\App\Git\usr\bin\vendor_perl;E:\App\Git\usr\bin\core_perl
 
 Yarn version: 
   1.10.1
@@ -14,17 +14,32 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: Can't answer a question unless a user TTY
-      at ConsoleReporter.question (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:86893:59)
-      at Object.<anonymous> (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:79585:38)
-      at Generator.next (<anonymous>)
-      at step (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
-      at C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+  Error: https://registry.yarnpkg.com/node_modules: Not found
+      at Request.params.callback [as _callback] (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:61073:18)
+      at Request.self.callback (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:120166:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:121138:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (C:\Users\parej\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:121060:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1094:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
+    "scripts": {
+      "dev": "parcel src/index.html",
+      "build": "parcel build src"
+    },
     "dependencies": {
-      "parcel-bundler": "^1.10.3"
+      "flickity": "^2.1.2",
+      "medium-zoom": "^1.0.2",
+      "parcel-bundler": "^1.10.3",
+      "waypoints": "^4.0.1"
+    },
+    "devDependencies": {
+      "sass": "^1.15.2"
     }
   }
 
@@ -1139,7 +1154,7 @@ Lockfile:
       escape-string-regexp "^1.0.5"
       supports-color "^5.3.0"
   
-  chokidar@^2.0.3:
+  chokidar@^2.0.0, chokidar@^2.0.3:
     version "2.0.4"
     resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.0.4.tgz#356ff4e2b0e8e43e322d18a372460bbcf3accd26"
     integrity sha512-z9n7yt9rOvIJrMhvDtDictKrkFHeihkNl6uWMmZlmL6tJtX9Cs+87oK+teBx+JIgzvbX3yZHT3eF8vpbDxHJXQ==
@@ -1750,6 +1765,11 @@ Lockfile:
       inherits "^2.0.1"
       minimalistic-assert "^1.0.0"
   
+  desandro-matches-selector@^2.0.0:
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
+    integrity sha1-cXvu1NwT59jzdi9wem1YpndCGOE=
+  
   destroy@~1.0.4:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
@@ -1967,6 +1987,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
     integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
   
+  ev-emitter@^1.0.1, ev-emitter@^1.0.2:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+    integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
+  
   events@^1.0.0:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
@@ -2064,10 +2089,29 @@ Lockfile:
       repeat-string "^1.6.1"
       to-regex-range "^2.1.0"
   
+  fizzy-ui-utils@^2.0.0:
+    version "2.0.7"
+    resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
+    integrity sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==
+    dependencies:
+      desandro-matches-selector "^2.0.0"
+  
   flatten@^1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
     integrity sha1-2uRqnXj74lKSJYzB54CkHZXAN4I=
+  
+  flickity@^2.1.2:
+    version "2.1.2"
+    resolved "https://registry.yarnpkg.com/flickity/-/flickity-2.1.2.tgz#f1be68a75c8d8d8d6df68fb2a49f358268279bd0"
+    integrity sha512-6IBJjkfCQ8yG6pah9rA9k4NoA9txuIf9+b3V67y70FdZK0icponlJEqseqLKuram0odKrv9ryjrBHQHgMkFfZA==
+    dependencies:
+      desandro-matches-selector "^2.0.0"
+      ev-emitter "^1.0.2"
+      fizzy-ui-utils "^2.0.0"
+      get-size "^2.0.0"
+      tap-listener "^2.0.0"
+      unidragger "^2.3.0"
   
   for-in@^1.0.2:
     version "1.0.2"
@@ -2141,6 +2185,11 @@ Lockfile:
     version "3.2.0"
     resolved "https://registry.yarnpkg.com/get-port/-/get-port-3.2.0.tgz#dd7ce7de187c06c8bf353796ac71e099f0980ebc"
     integrity sha1-3Xzn3hh8Bsi/NTeWrHHgmfCYDrw=
+  
+  get-size@^2.0.0:
+    version "2.0.3"
+    resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
+    integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
   
   get-value@^2.0.3, get-value@^2.0.6:
     version "2.0.6"
@@ -2835,6 +2884,11 @@ Lockfile:
     version "1.1.4"
     resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-1.1.4.tgz#50b5d4ffc4575276573c4eedb8780812a8419f01"
     integrity sha512-FSYbp3lyKjyj3E7fMl6rYvUdX0FBXaluGqlFoYESWQlyUTq8R+wp0rkFxoYFqZlHCvsUXGjyJmLQSnXToYhOSA==
+  
+  medium-zoom@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.2.tgz#a154f7814e2999811a1d9218ea8aadab5bda90e4"
+    integrity sha512-rSNfTb1XY1nsb6sUA2v30PlsVO20qknzGHevfCviPVOWhfG3C2fkhhybydepeS2Jw+EwcbBJY/xRI1ckZBjEXw==
   
   merge-source-map@1.0.4:
     version "1.0.4"
@@ -4279,6 +4333,13 @@ Lockfile:
     dependencies:
       clones "^1.1.0"
   
+  sass@^1.15.2:
+    version "1.15.2"
+    resolved "https://registry.yarnpkg.com/sass/-/sass-1.15.2.tgz#539f464a61e29a9e4f560ec9dc2ccc5236db8474"
+    integrity sha512-YFncPpx3ewKEhMg9sWdCxKUpPN/jwVLa0Q9iO2tcV5Y5Z/YAlFV6k6JaQwq3tmbN6FXKjUYElXRHcG0g4D1zkQ==
+    dependencies:
+      chokidar "^2.0.0"
+  
   sax@^1.2.4, sax@~1.2.1, sax@~1.2.4:
     version "1.2.4"
     resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
@@ -4671,6 +4732,13 @@ Lockfile:
       unquote "~1.1.1"
       util.promisify "~1.0.0"
   
+  tap-listener@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/tap-listener/-/tap-listener-2.0.0.tgz#d2e11d0d8e7c92b26a56ae4f35538a248b44ad63"
+    integrity sha1-0uEdDY58krJqVq5PNVOKJItErWM=
+    dependencies:
+      unipointer "^2.1.0"
+  
   tar@^4:
     version "4.4.8"
     resolved "https://registry.yarnpkg.com/tar/-/tar-4.4.8.tgz#b19eec3fde2a96e64666df9fdb40c5ca1bc3747d"
@@ -4821,6 +4889,13 @@ Lockfile:
       pako "^0.2.5"
       tiny-inflate "^1.0.0"
   
+  unidragger@^2.3.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/unidragger/-/unidragger-2.3.0.tgz#ab9d9fd62106f3252d88fae5f3a99575e6d31d02"
+    integrity sha512-dVkSqQdwcsaNmXaandBAOcJ4QVvkrDPosfCcZ7opYPkAiisCQaGlNw0pg00lBV4MQoWEXsEaiwhtQlbnvlXrQQ==
+    dependencies:
+      unipointer "^2.3.0"
+  
   union-value@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.0.tgz#5c71c34cb5bad5dcebe3ea0cd08207ba5aa1aea4"
@@ -4830,6 +4905,13 @@ Lockfile:
       get-value "^2.0.6"
       is-extendable "^0.1.1"
       set-value "^0.4.3"
+  
+  unipointer@^2.1.0, unipointer@^2.3.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/unipointer/-/unipointer-2.3.0.tgz#ba0dc462ce31c2a88e80810e19c3bae0ce47ed9f"
+    integrity sha512-m85sAoELCZhogI1owtJV3Dva7GxkHk2lI7A0otw3o0OwCuC/Q9gi7ehddigEYIAYbhkqNdri+dU1QQkrcBvirQ==
+    dependencies:
+      ev-emitter "^1.0.1"
   
   uniq@^1.0.1:
     version "1.0.1"
@@ -4925,6 +5007,11 @@ Lockfile:
     integrity sha1-XX6kW7755Kb/ZflUOOCofDV9WnM=
     dependencies:
       indexof "0.0.1"
+  
+  waypoints@^4.0.1:
+    version "4.0.1"
+    resolved "https://registry.yarnpkg.com/waypoints/-/waypoints-4.0.1.tgz#09979a0573810b29627cba4366a284a062ec69c8"
+    integrity sha1-CZeaBXOBCylifLpDZqKEoGLsacg=
   
   wcwidth@^1.0.1:
     version "1.0.1"
