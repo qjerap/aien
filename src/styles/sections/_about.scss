@@ -1,0 +1,37 @@
+#about {
+    background: url(images/stripes-light.png);
+    background-attachment: fixed;
+
+}
+
+.section-about {
+    position: relative;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    max-width: 1300px;
+    margin: auto;
+    height: 500px;
+}
+
+.about__hero {
+    position: absolute;
+    top: -25%;
+    // left: 70%;
+    background: url(images/hero4.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 500px;
+}
+
+.about__content {
+    grid-column: 2 / 3;
+    align-self: center;
+    width: 500px;
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+    
+}

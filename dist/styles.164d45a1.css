@@ -260,6 +260,40 @@ footer h1 {
   opacity: 1;
 }
 
+#about {
+  background: url(stripes-light.9f90c649.png);
+  background-attachment: fixed;
+}
+
+.section-about {
+  position: relative;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  max-width: 1300px;
+  margin: auto;
+  height: 500px;
+}
+
+.about__hero {
+  position: absolute;
+  top: -25%;
+  background: url(hero4.2c39ccf1.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 500px;
+}
+
+.about__content {
+  grid-column: 2/3;
+  align-self: center;
+  width: 500px;
+}
+.about__content h1 {
+  margin-bottom: 2rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
