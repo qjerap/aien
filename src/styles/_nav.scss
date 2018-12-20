@@ -3,16 +3,19 @@
     flex-direction: column;
     position: fixed;
     top: 3%;
-    right: 4.5%;
+    right: 3%;
 
     &__item {
         display: flex;
         justify-content: flex-end;
-        color: white;
         padding: 5px;
         font-weight: 700;
-        transition: color 1s;
-        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+        
+        transform: translateX(150px);
+        transition: all 0.3s;
+        color: black;
+        
+        visibility: hidden;
 
     }
 
@@ -23,8 +26,9 @@
 
 
 .black {
-    transition: color 1s;
-    color: black;
+    transform: translateX(0px);
+    transition: all 0.5s;
+    visibility: visible;
 }
 
 

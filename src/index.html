@@ -8,9 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
         crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
     <link rel="stylesheet" href="styles.scss">
     <title>Aien</title>
 </head>
@@ -21,7 +18,7 @@
         <a class="nav__item" href="#music">music</a>
         <a class="nav__item" href="#">about</a>
         <a class="nav__item" href="#">videos</a>
-        <a class="nav__item" href="#">shows</a>
+        <a class="nav__item" href="#shows">shows</a>
     </nav>
 
 
@@ -40,7 +37,7 @@
 
     <section id="music" class="section">
 
-        <div class="section-music">
+        <div data-aos="fade-up" data-aos-duration="1500" class="section-music">
             <div class="section-music__player">
                 <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=4107738673/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/"
                     seamless><a href="http://aien.bandcamp.com/album/single-2">Aien</a></iframe>
@@ -57,21 +54,56 @@
 
 
     </section>
-    
-        <section  id="videos" class="section">
 
-            <div class="section-videos">
+    <section id="videos" class="section">
+        <div class="section-videos"> </div>
+
+
+    </section>
+    <section id="shows" class="section">
+
+        <div class="section-shows">
+
+            <div data-aos="fade-in" data-aos-duration="1500" class="shows__title"><h1> shoWs</h1></div>
+
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0" class="card">
+                <div class="card__top">
+                        <h1>Jan <span>15</span>th</h1>
+                    <p>22:00</p>
+                </div>
+                <div class="card__mid">
+
+                    <h2>Club balettou</h2>
+                </div>
+                <div class="card__bot">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                </div>
+
 
             </div>
-    
-        </section>
-        <section  id="" class="section">
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100" class="card">
+                <div class="card__top">
+                        <h1>Jan <span>30</span>th</h1>
+                        <p>21:00</p>
+                </div>
+                <div class="card__mid">
+   
+                    <h2>L'escalier</h2>
+                </div>
+                <div class="card__bot">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                </div>
 
-            <div class="section-shows">
-                
+
             </div>
-    
-        </section>
+
+        </div>
+
+    </section>
 
 
 

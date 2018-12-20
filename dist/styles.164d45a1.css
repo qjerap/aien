@@ -43,24 +43,26 @@ section:nth-child(odd) {
   flex-direction: column;
   position: fixed;
   top: 3%;
-  right: 4.5%;
+  right: 3%;
 }
 .nav__item {
   display: flex;
   justify-content: flex-end;
-  color: white;
   padding: 5px;
   font-weight: 700;
-  transition: color 1s;
-  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transform: translateX(150px);
+  transition: all 0.3s;
+  color: black;
+  visibility: hidden;
 }
 .nav__item:hover {
   text-transform: uppercase;
 }
 
 .black {
-  transition: color 1s;
-  color: black;
+  transform: translateX(0px);
+  transition: all 0.5s;
+  visibility: visible;
 }
 
 footer {
@@ -159,7 +161,82 @@ footer h1 {
 }
 
 .section-shows {
+  max-width: 1300px;
+  margin: auto;
   height: 550px;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem;
+  place-content: center;
+}
+
+.shows__title {
+  grid-column: 1/3;
+  place-self: center;
+}
+
+.card {
+  grid-row: 2/3;
+  justify-self: center;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.card h1 {
+  color: #ffc684;
+  font-weight: 700;
+  font-size: 1.7rem;
+  font-family: Roboto;
+  padding: 20px 0;
+}
+.card h1 span {
+  font-family: Roboto;
+  color: tomato;
+}
+.card h2 {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.card__top {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card__bot {
+  background-color: #f7f7f7;
+  clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card__bot i {
+  color: black;
+  opacity: 0.6;
+  align-self: end;
+  justify-self: center;
+  padding-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.card__bot i:hover {
+  opacity: 1;
 }
 
 * {
