@@ -176,7 +176,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\hero.jpg":[["hero.0f0b5fd4.jpg","images/hero.jpg"],"images/hero.jpg"],"./images\\stripes-light.png":[["stripes-light.9f90c649.png","images/stripes-light.png"],"images/stripes-light.png"],"./images\\hero4.png":[["hero4.2c39ccf1.png","images/hero4.png"],"images/hero4.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./images\\hero-lr.jpg":[["hero-lr.721dab7b.jpg","images/hero-lr.jpg"],"images/hero-lr.jpg"],"./images\\stripes-light.png":[["stripes-light.9f90c649.png","images/stripes-light.png"],"images/stripes-light.png"],"./images\\hero5.png":[["hero5.36d87195.png","images/hero5.png"],"images/hero5.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -203,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63384" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64861" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

@@ -8,9 +8,9 @@
     &__item {
         display: flex;
         justify-content: flex-end;
-        padding: 5px;
+        padding: 3px;
         font-weight: 700;
-
+        font-size: 0.9rem;
         transform: translateX(150px);
         transition: all 0.3s;
         color: black;

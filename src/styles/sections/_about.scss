@@ -5,19 +5,24 @@
 }
 
 .section-about {
+    
     position: relative;
     display: grid;
     grid-template-columns: 500px 1fr;
     max-width: 1300px;
     margin: auto;
     height: 500px;
+    // border: 3px solid rgba($color: rgb(255, 198, 132), $alpha: 1);
+    
+
+    
 }
 
 .about__hero {
     position: absolute;
     top: -25%;
     // left: 70%;
-    background: url(images/hero4.png);
+    background: url(images/hero5.png);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -28,7 +33,9 @@
 .about__content {
     grid-column: 2 / 3;
     align-self: center;
-    width: 500px;
+    width: 550px;
+
+
 
     h1 {
         margin-bottom: 2rem;
