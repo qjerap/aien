@@ -10,28 +10,44 @@
     justify-items: center;
 
     @media all and (min-width: 875px) {
-        grid-template-columns: 1fr 1fr;  
+        grid-template-columns: 1fr 1fr;
         padding: 7rem 0;
- 
+
     }
-   
-    
+
+
 
     &__player {
 
-        @media all and (min-width: 875px) {justify-self: end}
-        
+        & iframe {
+            border: none;
+            width: 250px;
+            height: 250px;
+
+            @media all and (min-width: 875px) {
+                width: 350px;
+                height: 350px;
+            }
+
+
+        }
+
+
+        @media all and (min-width: 875px) {
+            justify-self: end
+        }
+
 
         iframe {
-            box-shadow: -1px 10px 17px -4px rgba(0,0,0,0.75);
+            box-shadow: -1px 10px 17px -4px rgba(0, 0, 0, 0.75);
             transition: all 0.3s;
-            
+
 
         }
 
         iframe:hover {
             transform: scale(1.01) rotate(-1deg);
-            
+
         }
     }
 
@@ -39,14 +55,25 @@
         display: grid;
         max-width: 350px;
 
-        p, h1 {
+        p,
+        h1 {
             padding-top: 1rem;
             padding-bottom: 1rem;
         }
-        
-        @media all and (min-width: 875px) {justify-self: start}
 
-        
+        button { margin-left: 1rem;
+        margin-right: 1rem;
+
+        @media all and (min-width: 875px) {
+            margin: 0;
+        }
+       
+        }
+
+        @media all and (min-width: 875px) {
+            justify-self: start
+        }
+
+
     }
 }
-

@@ -183,6 +183,17 @@ footer h1 {
     padding: 7rem 0;
   }
 }
+.section-music__player iframe {
+  border: none;
+  width: 250px;
+  height: 250px;
+}
+@media all and (min-width: 875px) {
+  .section-music__player iframe {
+    width: 350px;
+    height: 350px;
+  }
+}
 @media all and (min-width: 875px) {
   .section-music__player {
     justify-self: end;
@@ -199,9 +210,19 @@ footer h1 {
   display: grid;
   max-width: 350px;
 }
-.section-music__content p, .section-music__content h1 {
+.section-music__content p,
+.section-music__content h1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.section-music__content button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media all and (min-width: 875px) {
+  .section-music__content button {
+    margin: 0;
+  }
 }
 @media all and (min-width: 875px) {
   .section-music__content {
