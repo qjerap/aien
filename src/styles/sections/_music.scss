@@ -1,23 +1,50 @@
 .section-music {
     margin: auto;
+    padding: 2rem 0;
     max-width: 1300px;
-    height: 600px;
+    height: min-content;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-content: center;
     grid-gap: 1rem;
+    justify-items: center;
+
+    @media all and (min-width: 875px) {
+        grid-template-columns: 1fr 1fr;  
+        padding: 4rem 0;
+ 
+    }
    
     
 
     &__player {
-        justify-self: end;
+
+        @media all and (min-width: 875px) {justify-self: end}
         
+
+        iframe {
+            box-shadow: -1px 10px 17px -4px rgba(0,0,0,0.75);
+            transition: all 0.3s;
+            
+
+        }
+
+        iframe:hover {
+            transform: scale(1.01) rotate(-1deg);
+            
+        }
     }
 
     &__content {
         display: grid;
-        justify-self: start;
-        width: 350px;
+        max-width: 350px;
+
+        p, h1 {
+            padding: 1rem 0;
+        }
+        
+        @media all and (min-width: 875px) {justify-self: start}
+
         
     }
 }

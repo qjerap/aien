@@ -11,15 +11,19 @@
     background-image: url(images/hero-lr.jpg);
     background-position: center;
     background-size: cover;
+    filter: grayscale(0%);
 // background-attachment: fixed;
 }
 
 .header__logo {
-    grid-area: 1 / 1 / 2 / 2;
+    z-index: 999;
+    grid-area: 1 / 1 / 2 / 3;
     margin: 2rem 0 0 5rem;
     font-size: 3rem;
     font-weight: 700;
     color: white;
+    // place-self: center;
+    
 }
 
 
