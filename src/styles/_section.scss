@@ -14,8 +14,11 @@
         font-weight: 400;
         font-size: 0.9rem;
         text-align: justify;
+        padding: 0 1rem;
 
-        @media all and (min-width: 875px) {font-size: 1rem;}
+        @media all and (min-width: 875px) {font-size: 1rem;
+            padding: 0;
+        }
     }
 
 }

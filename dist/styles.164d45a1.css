@@ -40,10 +40,12 @@
   font-weight: 400;
   font-size: 0.9rem;
   text-align: justify;
+  padding: 0 1rem;
 }
 @media all and (min-width: 875px) {
   .section p {
     font-size: 1rem;
+    padding: 0;
   }
 }
 
@@ -178,7 +180,7 @@ footer h1 {
 @media all and (min-width: 875px) {
   .section-music {
     grid-template-columns: 1fr 1fr;
-    padding: 4rem 0;
+    padding: 7rem 0;
   }
 }
 @media all and (min-width: 875px) {
@@ -198,7 +200,8 @@ footer h1 {
   max-width: 350px;
 }
 .section-music__content p, .section-music__content h1 {
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 @media all and (min-width: 875px) {
   .section-music__content {
@@ -221,7 +224,7 @@ footer h1 {
 
 .section-shows {
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 0 5rem 0;
   max-width: 1300px;
   height: min-content;
   display: grid;
@@ -342,17 +345,24 @@ footer h1 {
 }
 
 .section-about {
-  position: relative;
   display: grid;
-  grid-template-columns: 500px 1fr;
+  grid-template: 1fr/1fr;
   max-width: 1300px;
   margin: auto;
-  height: 500px;
+  height: min-content;
+}
+@media all and (min-width: 875px) {
+  .section-about {
+    position: relative;
+    grid-template: none/500px 1fr;
+    height: 400px;
+  }
 }
 
 .about__hero {
+  display: none;
   position: absolute;
-  top: -25%;
+  top: -45%;
   background: url(hero7.26a60798.png);
   background-position: center;
   background-size: 100%;
@@ -360,15 +370,33 @@ footer h1 {
   height: 800px;
   width: 500px;
 }
+@media all and (min-width: 875px) {
+  .about__hero {
+    display: block;
+  }
+}
 
 .about__content {
-  grid-column: 2/3;
+  justify-self: center;
   align-self: center;
-  width: 550px;
+  width: 350px;
   color: #e6e6e6;
+  padding: 2rem 0;
+}
+@media all and (min-width: 875px) {
+  .about__content {
+    justify-self: left;
+    grid-column: 2/3;
+    width: 550px;
+  }
 }
 .about__content h1 {
   margin-bottom: 2rem;
+}
+@media all and (min-width: 875px) {
+  .about__content h1 {
+    text-align: left;
+  }
 }
 
 * {
