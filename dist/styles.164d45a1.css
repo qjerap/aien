@@ -180,7 +180,7 @@ footer h1 {
 @media all and (min-width: 875px) {
   .section-music {
     grid-template-columns: 1fr 1fr;
-    padding: 7rem 0;
+    padding: 150px 0;
   }
 }
 .section-music__player iframe {
@@ -249,7 +249,7 @@ footer h1 {
   max-width: 1300px;
   height: min-content;
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 70px 1fr;
   grid-template-columns: repeat(2, 150px);
   grid-gap: 1rem;
   place-content: center;
@@ -258,6 +258,7 @@ footer h1 {
   .section-shows {
     grid-template-columns: repeat(2, 200px);
     grid-gap: 1.5rem;
+    padding: 120px 0;
   }
 }
 
@@ -376,20 +377,20 @@ footer h1 {
   .section-about {
     position: relative;
     grid-template: none/500px 1fr;
-    height: 400px;
+    height: 420px;
   }
 }
 
 .about__hero {
   display: none;
   position: absolute;
-  top: -45%;
+  top: -50%;
   background: url(hero7.26a60798.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 800px;
-  width: 500px;
+  height: 850px;
+  width: 550px;
 }
 @media all and (min-width: 875px) {
   .about__hero {
@@ -408,7 +409,7 @@ footer h1 {
   .about__content {
     justify-self: left;
     grid-column: 2/3;
-    width: 550px;
+    width: 507px;
   }
 }
 .about__content h1 {
@@ -416,7 +417,7 @@ footer h1 {
 }
 @media all and (min-width: 875px) {
   .about__content h1 {
-    text-align: left;
+    text-align: right;
   }
 }
 

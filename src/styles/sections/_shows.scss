@@ -4,7 +4,7 @@
     max-width: 1300px;
     height: min-content;
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 70px 1fr;
     grid-template-columns: repeat(2, 150px);
     grid-gap: 1rem;
     place-content: center;
@@ -12,6 +12,7 @@
     @media all and (min-width: 500px) {
         grid-template-columns: repeat(2, 200px);
         grid-gap: 1.5rem;
+        padding: 120px 0;
 
     }
    
