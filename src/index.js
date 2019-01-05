@@ -21,7 +21,7 @@ var waypoint2 = new Waypoint({
     direction == 'up' && header.classList.remove('header__logo-onScroll')
      
   },
-  offset: 500
+  offset: 800
 })
 
 AOS.init();

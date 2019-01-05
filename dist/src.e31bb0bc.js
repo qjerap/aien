@@ -206,7 +206,7 @@ var waypoint2 = new Waypoint({
     direction == 'down' && header.classList.add('header__logo-onScroll');
     direction == 'up' && header.classList.remove('header__logo-onScroll');
   },
-  offset: 500
+  offset: 800
 });
 
 _aos.default.init();
@@ -237,7 +237,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56378" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54884" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
