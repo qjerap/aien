@@ -189,16 +189,6 @@ require("aos/dist/aos.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var waypoint = new Waypoint({
-  element: document.getElementById('section'),
-  handler: function handler(direction) {
-    var nav = document.querySelectorAll('.nav__item');
-    nav.forEach(function (item) {
-      direction == 'down' && item.classList.add('black');
-      direction == 'up' && item.classList.remove('black');
-    });
-  }
-});
 var waypoint2 = new Waypoint({
   element: document.getElementById('section'),
   handler: function handler(direction) {
@@ -206,7 +196,7 @@ var waypoint2 = new Waypoint({
     direction == 'down' && header.classList.add('header__logo-onScroll');
     direction == 'up' && header.classList.remove('header__logo-onScroll');
   },
-  offset: 800
+  offset: 600
 });
 
 _aos.default.init();
@@ -237,7 +227,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54884" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59402" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
