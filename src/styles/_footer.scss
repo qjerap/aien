@@ -2,8 +2,12 @@ footer {
     height: 250px;
     display: grid;
     grid-template-rows: 100px 100px;
-    justify-content: center;
-    align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background-color: #fff;
 
     h1 {
         place-self: center;
@@ -14,8 +18,12 @@ footer {
 }
 
 .footer__media {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     i {
         display: grid;
@@ -26,6 +34,7 @@ footer {
         border-radius: 50%;
         color: white;
         background-color: darken($color: #fff, $amount: 7);
+        -webkit-transition: background-color 0.4s;
         transition: background-color 0.4s;
     }
 

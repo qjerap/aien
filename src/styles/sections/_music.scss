@@ -2,16 +2,23 @@
     margin: auto;
     padding: 2rem 0;
     max-width: 1300px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     display: grid;
     grid-template-columns: 1fr;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     grid-gap: 1rem;
     justify-items: center;
+    
+    
+
 
     @media all and (min-width: 875px) {
         grid-template-columns: 1fr 1fr;
         padding: 150px 0;
+        
 
     }
 
@@ -39,14 +46,17 @@
 
 
         iframe {
-            box-shadow: -1px 10px 17px -4px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -1px 10px 17px -4px rgba(0, 0, 0, 0.75);
+                    box-shadow: -1px 10px 17px -4px rgba(0, 0, 0, 0.75);
+            -webkit-transition: all 0.3s;
             transition: all 0.3s;
 
 
         }
 
         iframe:hover {
-            transform: scale(1.01) rotate(-1deg);
+            -webkit-transform: scale(1.01) rotate(-1deg);
+                    transform: scale(1.01) rotate(-1deg);
 
         }
     }
@@ -77,3 +87,5 @@
 
     }
 }
+
+

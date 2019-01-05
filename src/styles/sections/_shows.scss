@@ -2,12 +2,19 @@
     margin: auto;
     padding: 2rem 0 5rem 0;
     max-width: 1300px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
     height: min-content;
     display: grid;
     grid-template-rows: 70px 1fr;
     grid-template-columns: repeat(2, 150px);
     grid-gap: 1rem;
-    place-content: center;
+    // place-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     
     @media all and (min-width: 500px) {
         grid-template-columns: repeat(2, 200px);
@@ -28,14 +35,20 @@
 
 .card__container {
     // grid-row: 2 / 3;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
     justify-self: center;
 
     &:hover {
-        transform: translate(3px, -10px);
+        -webkit-transform: translate(3px, -10px);
+                transform: translate(3px, -10px);
 
     }
 }
+
+
 
 
 .card {
@@ -45,9 +58,11 @@
     height: 225px;
     width: 150px;
     background-color: white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+
 
     @media all and (min-width: 500px) {
         width: 200px;
@@ -57,7 +72,8 @@
     
 
     &:hover {
-        box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.05);
+        -webkit-box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.05);
+                box-shadow: -2px 3px 4px rgba(0, 0, 0, 0.05);
 
     }
 
@@ -71,6 +87,7 @@
         font-family: Roboto;
         cursor: default;
         padding: 20px 0;
+        letter-spacing: 0.1rem;
 
         @media all and (min-width: 500px) {
             font-size: 1.7rem;
@@ -102,17 +119,19 @@
     
 }
 
-// .card:hover {
-//     transform: scale(1.1);
-// }
-
-
 
 .card__top {
     padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     p {
         cursor: default;
@@ -122,10 +141,20 @@
 
 .card__mid {
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
 
 }
@@ -133,14 +162,16 @@
 .card__bot {
 
     background-color: darken($color: #fff, $amount: 3);
-    clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0 100%);
+            clip-path: polygon(0 40%, 100% 10%, 100% 100%, 0 100%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
     i {
         color: black;
         opacity: 0.6;
-        align-self: end;
+        -ms-flex-item-align: end;
+            align-self: end;
         justify-self: center;
         padding-bottom: 1rem;
         cursor: pointer;

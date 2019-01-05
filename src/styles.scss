@@ -1,5 +1,6 @@
 @import './styles/var';
 @import './styles/header';
+@import 'node_modules/normalize-scss/sass/normalize.scss';
 @import './styles/section';
 @import './styles/nav';
 @import './styles/footer';
@@ -11,7 +12,8 @@
 
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin:  0;
     font-family: 'Major Mono Display', monospace;
     scroll-behavior: smooth;
@@ -26,3 +28,5 @@ body {
 a {
     text-decoration: none;  
 }
+
+

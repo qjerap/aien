@@ -1,12 +1,13 @@
 {
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src"
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "flickity": "^2.1.2",
     "medium-zoom": "^1.0.2",
+    "normalize-scss": "^7.0.1",
     "parcel-bundler": "^1.10.3",
     "waypoints": "^4.0.1"
   },
