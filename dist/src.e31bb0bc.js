@@ -199,6 +199,15 @@ var waypoint = new Waypoint({
     });
   }
 });
+var waypoint2 = new Waypoint({
+  element: document.getElementById('section'),
+  handler: function handler(direction) {
+    var header = document.querySelector('.header__hero');
+    direction == 'down' && header.classList.add('header__logo-onScroll');
+    direction == 'up' && header.classList.remove('header__logo-onScroll');
+  },
+  offset: 500
+});
 
 _aos.default.init();
 },{"aos":"../node_modules/aos/dist/aos.js","aos/dist/aos.css":"../node_modules/aos/dist/aos.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -228,7 +237,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55327" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56378" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

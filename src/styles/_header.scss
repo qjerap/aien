@@ -15,6 +15,7 @@
     -webkit-filter: grayscale(0%);
             filter: grayscale(0%);
 background-attachment: fixed;
+transition: opacity 1s;
 
 @media all and (min-width: 875px) {
     background-image: url(images/hero-lr.jpg);
@@ -26,6 +27,11 @@ background-attachment: fixed;
     
 
 }
+}
+
+.header__logo-onScroll {
+    opacity: 0.2;
+    transition: opacity 1s;
 }
 
 .header__logo {

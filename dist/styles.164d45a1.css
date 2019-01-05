@@ -14,6 +14,7 @@
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   background-attachment: fixed;
+  transition: opacity 1s;
 }
 @media all and (min-width: 875px) {
   .header__hero {
@@ -22,6 +23,11 @@
     background-position-x: -1rem;
     background-position-y: -30rem;
   }
+}
+
+.header__logo-onScroll {
+  opacity: 0.2;
+  transition: opacity 1s;
 }
 
 .header__logo {
