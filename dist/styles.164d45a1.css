@@ -20,8 +20,8 @@
   .header__hero {
     background-image: url(hero-lr.721dab7b.jpg);
     background-size: 100%;
-    background-position-x: -1rem;
-    background-position-y: -30rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 }
 

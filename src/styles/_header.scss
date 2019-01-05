@@ -20,8 +20,8 @@ transition: opacity 1s;
 @media all and (min-width: 875px) {
     background-image: url(images/hero-lr.jpg);
     background-size: 100%;
-    background-position-x: -1rem;
-    background-position-y: -30rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
 
     // background-repeat: no-repeat;
     
